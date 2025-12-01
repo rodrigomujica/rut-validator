@@ -3,12 +3,13 @@ package com.example;
 public class RutUtils {
 
     /**
-     * Clean RUT string: remove dots, spaces and convert to upper case.
+     * AAA Clean RUT string: remove dots, spaces and convert to upper case.
      */
     public static String clean(String rut) {
         if (rut == null) return null;
         return rut.replace(".", "").replace(" ", "").toUpperCase();
     }
+}
 
     /**
      * Validate a Chilean RUT. Accepts formats like "12345678-5" or "12.345.678-5" or "123456785".
